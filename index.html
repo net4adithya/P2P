@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P₂P — SkillSwap Final MVP</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>P<sub>2</sub>P</h1>
+  <p class="tagline">Learn. Share. Grow.</p>
+</header>
+
+<nav>
+  <a href="#" onclick="showSection('feed')">Home</a> |
+  <a href="#" onclick="showSection('profile')">Profile</a> |
+  <a href="#" onclick="showSection('mailbox')">Mailbox</a> |
+  <a href="#" onclick="showSection('search')">Explore</a> |
+  <a href="#" onclick="showSection('chat')">Chat</a> |
+  <a href="#" onclick="showSection('groups')">Groups</a>
+</nav>
+
+<!-- Sections -->
+<div id="feed" class="section"></div>
+<div id="profile" class="section" style="display:none;"></div>
+<div id="mailbox" class="section" style="display:none;"></div>
+<div id="search" class="section" style="display:none;">
+  <input type="text" id="searchInput" placeholder="Search peers, builds, groups...">
+  <div id="results"></div>
+</div>
+<div id="chat" class="section" style="display:none;">
+  <input type="text" id="chatInput" placeholder="Type a message...">
+  <button id="sendBtn">Send</button>
+  <div id="chatBox"></div>
+</div>
+<div id="groups" class="section" style="display:none;">
+  <h2>Create / View Groups</h2>
+  <input type="text" id="groupNameInput" placeholder="Enter Group Name">
+  <button id="createGroupBtn">Create Group</button>
+  <div id="groupsList"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
